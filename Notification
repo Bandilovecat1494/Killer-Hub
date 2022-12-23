@@ -6,7 +6,7 @@ local _82hName = Instance.new("TextLabel")
 local _82hName_2 = Instance.new("TextLabel")
 local _82hIcon = Instance.new("ImageLabel")
 local _82hFrameShadow = Instance.new("ImageLabel")
-local Text = _82hName.Text
+_82hName.Text = "Loading Body Fling"
 local Sound = Instance.new("Sound")
 Sound.SoundId = "rbxassetid://6026984224"
 --local ErrorSound = "rbxassetid://550209561"
@@ -14,7 +14,7 @@ local ErrorSfx = false
 Sound.Parent = game.Players.LocalPlayer.PlayerGui
 
 _123890.Name = "123890"
-_123890.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+_123890.Parent = game.CoreGui
 
 _82hFrame.Name = "82hFrame"
 _82hFrame.Parent = _123890
@@ -77,7 +77,7 @@ _82hFrameShadow.SliceScale = 0.040
 _82hFrame:TweenPosition(UDim2.new(0.85, 0, 0.86, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,2)
 Sound:Play()
 wait(10)
-_82hFrame:TweenPosition(UDim2.new(0.85, 0, 1, 0),Enum.EasingDirection.In,Enum.EasingStyle.Back,0.3)
+_82hFrame:TweenPosition(UDim2.new(0.85, 0, 1, 0),Enum.EasingDirection.In,Enum.EasingStyle.Back,3)
 Sound:Destroy()
-wait(2)
+wait(4)
 _123890:Destroy()
