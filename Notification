@@ -1,0 +1,83 @@
+--Notification Script--
+
+local _123890 = Instance.new("ScreenGui")
+local _82hFrame = Instance.new("ImageLabel")
+local _82hName = Instance.new("TextLabel")
+local _82hName_2 = Instance.new("TextLabel")
+local _82hIcon = Instance.new("ImageLabel")
+local _82hFrameShadow = Instance.new("ImageLabel")
+local Text = _82hName.Text
+local Sound = Instance.new("Sound")
+Sound.SoundId = "rbxassetid://6026984224"
+--local ErrorSound = "rbxassetid://550209561"
+local ErrorSfx = false
+Sound.Parent = game.Players.LocalPlayer.PlayerGui
+
+_123890.Name = "123890"
+_123890.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+_82hFrame.Name = "82hFrame"
+_82hFrame.Parent = _123890
+_82hFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_82hFrame.BackgroundTransparency = 1.000
+_82hFrame.Position = UDim2.new(1, 0, 0.86, 0)
+_82hFrame.Size = UDim2.new(0, 170, 0, 72)
+_82hFrame.ZIndex = 0
+_82hFrame.Image = "rbxassetid://3570695787"
+_82hFrame.ImageColor3 = Color3.fromRGB(62, 62, 62)
+_82hFrame.ScaleType = Enum.ScaleType.Slice
+_82hFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+_82hFrame.SliceScale = 0.040
+
+_82hName.Name = "82hName"
+_82hName.Parent = _82hFrame
+_82hName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_82hName.BackgroundTransparency = 1.000
+_82hName.Position = UDim2.new(0.423529416, 0, 0.347222209, 0)
+_82hName.Size = UDim2.new(0, 79, 0, 47)
+_82hName.Font = Enum.Font.SourceSansBold
+--_82hName.Text = "Stuff"
+_82hName.TextColor3 = Color3.fromRGB(0, 0, 0)
+_82hName.TextSize = 14.000
+_82hName.TextWrapped = true
+_82hName.TextXAlignment = Enum.TextXAlignment.Left
+_82hName.TextYAlignment = Enum.TextYAlignment.Top
+
+_82hName_2.Name = "82hName"
+_82hName_2.Parent = _82hFrame
+_82hName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_82hName_2.BackgroundTransparency = 1.000
+_82hName_2.Position = UDim2.new(0.270588249, 0, 0, 0)
+_82hName_2.Size = UDim2.new(0, 124, 0, 25)
+_82hName_2.Font = Enum.Font.SourceSansBold
+_82hName_2.Text = "Name"
+_82hName_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+_82hName_2.TextSize = 14.000
+
+_82hIcon.Name = "82hIcon"
+_82hIcon.Parent = _82hFrame
+_82hIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_82hIcon.BackgroundTransparency = 1.000
+_82hIcon.Size = UDim2.new(0.423999995, 0, 1, 0)
+_82hIcon.Image = "http://www.roblox.com/asset/?id=11241055563"
+
+_82hFrameShadow.Name = "82hFrameShadow"
+_82hFrameShadow.Parent = _82hFrame
+_82hFrameShadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_82hFrameShadow.BackgroundTransparency = 1.000
+_82hFrameShadow.Position = UDim2.new(0, 5, 0, 5)
+_82hFrameShadow.Size = UDim2.new(1, 0, 1, 0)
+_82hFrameShadow.ZIndex = -900
+_82hFrameShadow.Image = "rbxassetid://3570695787"
+_82hFrameShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+_82hFrameShadow.ImageTransparency = 0.500
+_82hFrameShadow.ScaleType = Enum.ScaleType.Slice
+_82hFrameShadow.SliceCenter = Rect.new(100, 100, 100, 100)
+_82hFrameShadow.SliceScale = 0.040
+_82hFrame:TweenPosition(UDim2.new(0.85, 0, 0.86, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,2)
+Sound:Play()
+wait(10)
+_82hFrame:TweenPosition(UDim2.new(0.85, 0, 1, 0),Enum.EasingDirection.In,Enum.EasingStyle.Back,0.3)
+Sound:Destroy()
+wait(2)
+_123890:Destroy()
