@@ -75,10 +75,10 @@ _82hFrameShadow.ImageTransparency = 0.500
 _82hFrameShadow.ScaleType = Enum.ScaleType.Slice
 _82hFrameShadow.SliceCenter = Rect.new(100, 100, 100, 100)
 _82hFrameShadow.SliceScale = 0.040
-_82hFrame:TweenPosition(UDim2.new(0.85, 0, 0.86, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,2)
+_82hFrame:TweenPosition(UDim2.new(0.85, 0, 0.86, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,0.3)
 Sound:Play()
-wait(10)
-_82hFrame:TweenPosition(UDim2.new(0.85, 0, 1, 0),Enum.EasingDirection.In,Enum.EasingStyle.Back,3)
+wait(0.3)
+_82hFrame:TweenPosition(UDim2.new(0.85, 0, 1, 0),Enum.EasingDirection.In,Enum.EasingStyle.Back,0.1)
 Sound:Destroy()
-wait(4)
+wait(0.2)
 _123890:Destroy()
